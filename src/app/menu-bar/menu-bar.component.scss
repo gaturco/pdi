@@ -1,0 +1,37 @@
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  background: none;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  a {
+    color: #fff;
+    display: block;
+    padding: 10px 20px;
+    transition: background-color 1s, color 1s;
+    font-family: 'Roboto';
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+
+    &:hover,
+    &:active {
+      background: #fff;
+      color: #333;
+    }
+  }
+}
