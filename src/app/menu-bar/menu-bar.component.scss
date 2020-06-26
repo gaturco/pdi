@@ -1,16 +1,57 @@
 header {
-  height: 100vh;
+  height: 10vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.nav {
+  width: 100vw;
+  position: fixed;
+  top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inicio {
+  display: flex;
+  width: 35vw;
+
+  a {
+    color: #fff;
+    padding: 10px 20px;
+    transition: background-color 0.5s, color 0.5s;
+    font-family: 'Roboto';
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &:hover,
+    &.active {
+      background: #fff;
+      color: #333;
+    }
+  }
+
+  i {
+    font-size: 20px;
+    margin-right: 10px;
+  }
 }
 
 .menu {
   background: none;
-  position: fixed;
   top: 0;
-  width: 100vw;
+  width: 65vw;
   z-index: 1;
+  padding-right: 50px;
 
   ul {
     display: flex;
@@ -22,14 +63,14 @@ header {
     color: #fff;
     display: block;
     padding: 10px 20px;
-    transition: background-color 1s, color 1s;
+    transition: background-color 0.5s, color 0.5s;
     font-family: 'Roboto';
     text-decoration: none;
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 16px;
+    border-radius: 100px;
 
     &:hover,
-    &:active {
+    &.active {
       background: #fff;
       color: #333;
     }

@@ -7,7 +7,12 @@ import { ObjetivosComponent } from './objetivos/objetivos.component';
 import { ComoMeVejoComponent } from './como-me-vejo/como-me-vejo.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
-import { FeedbackComponent } from './feedback/feedback.component'
+import { FeedbackComponent } from './feedback/feedback.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './home/home.component';
+import { MomentoCarreiraComponent } from './momento-carreira/momento-carreira.component';
+import { PassosComponent } from './passos/passos.component';
+import { PlanoAcaoComponent } from './plano-acao/plano-acao.component'
 
 @NgModule({
   declarations: [
@@ -15,12 +20,17 @@ import { FeedbackComponent } from './feedback/feedback.component'
     MenuBarComponent,
     ObjetivosComponent,
     ComoMeVejoComponent,
-    FeedbackComponent
+    FeedbackComponent,
+    HomeComponent,
+    MomentoCarreiraComponent,
+    PassosComponent,
+    PlanoAcaoComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,12 +1,14 @@
-#comomevejo {
-  width: 70vw;
+#plano {
+  width: 100%;
   margin: auto;
-  margin-top: 100px;
+  margin: auto;
+  margin-top: 50px;
 
-  .comomevejo {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  h2 {
+    font-size: 30px;
+    margin: 50px 0 16px;
+    color: whitesmoke;
+    text-align: left;
   }
 
   .card {
@@ -15,6 +17,9 @@
     margin-bottom: 20px;
     box-shadow: 2px 2px 2px rgba($color: #000000, $alpha: 0.4);
     border-radius: 4px;
+    margin: auto;
+    margin-top: 50px;
+    width: 70%;
   }
 
   .card-header {
@@ -28,13 +33,13 @@
   .card-body {
     background: #f2f2f2;
     color: #262223;
-
-    li {
-      line-height: 24px;
-    }
   }
-  .invisible {
-    color: #f2f2f2;
+
+  .plano-table {
+    text-align: left;
+    &__first {
+      width: 65%;
+    }
   }
 
   table {
